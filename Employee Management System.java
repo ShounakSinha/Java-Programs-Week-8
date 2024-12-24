@@ -118,5 +118,21 @@ class Main {
         manager.setSalary(Integer.parseInt(reader.readLine()));
         System.out.print("Enter Department: ");
         manager.setDepartment(reader.readLine());
+        System.out.println("\nEnter details for Developer:");
+        Developer developer = new Developer();
+        System.out.print("Enter Name: ");
+        developer.setName(reader.readLine());
+        System.out.print("Enter ID: ");
+        developer.setId(reader.readLine());
+        System.out.print("Enter Salary: ");
+        developer.setSalary(Integer.parseInt(reader.readLine()));
+        System.out.print("Enter Programming Language: ");
+        developer.setProgrammingLanguage(reader.readLine());
+
+        System.out.println("\nManager Details:");
+        manager.displayDetails();
+
+        System.out.println("\nDeveloper Details:");
+        developer.displayDetails();
     }
 }
