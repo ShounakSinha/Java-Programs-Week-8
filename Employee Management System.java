@@ -25,6 +25,30 @@ class Employee
         System.out.println("The Employee salary is : "+salary);
     }
 }
+class Manager extends Employee
+{
+    private String dept;
+    Manager()
+    {
+        System.out.println(Constructor of Manager is called");
+    }
+    public void setDepartment(String dept)
+    {
+        this.dept=dept;
+    }
+    public String getDepartment()
+    {
+        return dept;
+    }
+    void displayDetails()
+    {
+        System.ut.println("After overriding");
+        System.out.println("The Employee Name is : "+name);
+        System.out.println("The Employee ID is : "+id);
+        System.out.println("The Employee salary is : "+salary);
+        System.out,println("The Manager's department is : "+dept)
+    }
+}
 class Main {
     public static void main(String[] args)throws IOException {
         System.out.println("Try programiz.pro");
