@@ -46,7 +46,7 @@ class Manager extends Employee
         System.out.println("The Employee Name is : "+name);
         System.out.println("The Employee ID is : "+id);
         System.out.println("The Employee salary is : "+salary);
-        System.out,println("The Manager's department is : "+dept)
+        System.out.println("The Manager's department is : "+dept)
     }
 }
 class Developer extends Employee
@@ -70,7 +70,7 @@ class Developer extends Employee
         System.out.println("The Employee Name is : "+name);
         System.out.println("The Employee ID is : "+id);
         System.out.println("The Employee salary is : "+salary);
-        System.out,println("The Developer's language is : "+dept)
+        System.out.println("The Developer's language is : "+dept)
     }
 }
 class Main {
