@@ -10,6 +10,7 @@
 // Override displayDetails() in each subclass to include additional details.
 // Write a main() method to demonstrate creating objects of each class and displaying their details.
 
+import java.io.*;
 class Employee
 {
     private String name, id;
@@ -30,7 +31,7 @@ class Manager extends Employee
     private String dept;
     Manager()
     {
-        System.out.println(Constructor of Manager is called");
+        System.out.println("Constructor of Manager is called");
     }
     public void setDepartment(String dept)
     {
@@ -42,11 +43,11 @@ class Manager extends Employee
     }
     void displayDetails()
     {
-        System.ut.println("After overriding");
+        System.out.println("After overriding");
         System.out.println("The Employee Name is : "+name);
         System.out.println("The Employee ID is : "+id);
         System.out.println("The Employee salary is : "+salary);
-        System.out.println("The Manager's department is : "+dept)
+        System.out.println("The Manager's department is : "+dept);
     }
 }
 class Developer extends Employee
@@ -54,7 +55,7 @@ class Developer extends Employee
     private String programmingLanguage;
     Developer()
     {
-        System.out.println(Constructor of Developer is called");
+        System.out.println("Constructor of Developer is called");
     }
     public void setProgrammingLanguage(String dept)
     {
@@ -66,15 +67,18 @@ class Developer extends Employee
     }
     void displayDetails()
     {
-        System.ut.println("After overriding");
+        System.out.println("After overriding");
         System.out.println("The Employee Name is : "+name);
         System.out.println("The Employee ID is : "+id);
         System.out.println("The Employee salary is : "+salary);
-        System.out.println("The Developer's language is : "+dept)
+        System.out.println("The Developer's language is : "+programmingLanguage);
     }
 }
 class Main {
     public static void main(String[] args)throws IOException {
         System.out.println("Try programiz.pro");
+        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+        Employee em = new Employee();
+        Employee em = new Manager();
     }
 }
