@@ -19,6 +19,31 @@ class Employee
     {
         System.out.println("An object of Emloyee Class created");
     }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter and Setter for id
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    // Getter and Setter for salary
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
     void displayDetails()
     {
         System.out.println("The Employee Name is : "+name);
