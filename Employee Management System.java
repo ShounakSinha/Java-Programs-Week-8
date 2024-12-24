@@ -46,10 +46,11 @@ class Employee
     }
     void displayDetails()
     {
-        System.out.println("The Employee Name is : "+name);
-        System.out.println("The Employee ID is : "+id);
-        System.out.println("The Employee salary is : "+salary);
+        System.out.println("The Employee Name is : "+getName());
+        System.out.println("The Employee ID is : "+getId());
+        System.out.println("The Employee salary is : "+getSalary());
     }
+    
 }
 class Manager extends Employee
 {
@@ -66,12 +67,13 @@ class Manager extends Employee
     {
         return dept;
     }
+    
     void displayDetails()
     {
         System.out.println("After overriding");
-        System.out.println("The Employee Name is : "+name);
-        System.out.println("The Employee ID is : "+id);
-        System.out.println("The Employee salary is : "+salary);
+        System.out.println("The Employee Name is : "+getName());
+        System.out.println("The Employee ID is : "+getId());
+        System.out.println("The Employee salary is : "+getSalary());
         System.out.println("The Manager's department is : "+dept);
     }
 }
@@ -82,7 +84,7 @@ class Developer extends Employee
     {
         System.out.println("Constructor of Developer is called");
     }
-    public void setProgrammingLanguage(String dept)
+    public void setProgrammingLanguage(String lang)
     {
         programmingLanguage=lang;
     }
@@ -93,10 +95,10 @@ class Developer extends Employee
     void displayDetails()
     {
         System.out.println("After overriding");
-        System.out.println("The Employee Name is : "+name);
-        System.out.println("The Employee ID is : "+id);
-        System.out.println("The Employee salary is : "+salary);
-        System.out.println("The Developer's language is : "+programmingLanguage);
+        System.out.println("The Employee Name is : "+getName());
+        System.out.println("The Employee ID is : "+getId());
+        System.out.println("The Employee salary is : "+getSalary());
+        System.out.println("The Developer's language is : "+ programmingLanguage);
     }
 }
 class Main {
@@ -104,6 +106,7 @@ class Main {
         System.out.println("Try programiz.pro");
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
         Employee em = new Employee();
-        Employee em = new Manager();
+        Employee em1 = new Manager();
+        Manager man1= new Manager();
     }
 }
