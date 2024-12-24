@@ -49,6 +49,30 @@ class Manager extends Employee
         System.out,println("The Manager's department is : "+dept)
     }
 }
+class Developer extends Employee
+{
+    private String programmingLanguage;
+    Developer()
+    {
+        System.out.println(Constructor of Developer is called");
+    }
+    public void setProgrammingLanguage(String dept)
+    {
+        programmingLanguage=lang;
+    }
+    public String getProgrammingLanguage()
+    {
+        return programmingLanguage;
+    }
+    void displayDetails()
+    {
+        System.ut.println("After overriding");
+        System.out.println("The Employee Name is : "+name);
+        System.out.println("The Employee ID is : "+id);
+        System.out.println("The Employee salary is : "+salary);
+        System.out,println("The Developer's language is : "+dept)
+    }
+}
 class Main {
     public static void main(String[] args)throws IOException {
         System.out.println("Try programiz.pro");
