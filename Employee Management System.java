@@ -108,5 +108,15 @@ class Main {
         Employee em = new Employee();
         Employee em1 = new Manager();
         Manager man1= new Manager();
+        System.out.println("Enter details for Manager:");
+        Manager manager = new Manager();
+        System.out.print("Enter Name: ");
+        manager.setName(reader.readLine());
+        System.out.print("Enter ID: ");
+        manager.setId(reader.readLine());
+        System.out.print("Enter Salary: ");
+        manager.setSalary(Integer.parseInt(reader.readLine()));
+        System.out.print("Enter Department: ");
+        manager.setDepartment(reader.readLine());
     }
 }
