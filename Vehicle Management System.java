@@ -11,6 +11,7 @@
 
 
 
+import java.io.*;
 abstract class Vehicle
 {
     Vehicle()
@@ -57,6 +58,10 @@ class Bike extends Vehicle
 class Main {
     public static void main(String[] args)throws IOException
     {
-        
+        BufferedReader read= new BufferedReader(new InputStreamReader(System.in));
+        Vehicle car= new Car();
+        Vehicle bike = new Bike();
+        car.Start();
+        bike.Stop();
     }
 }
