@@ -10,3 +10,30 @@
 // Write a main() method to create and manipulate objects of Car and Bike.
 
 
+abstract class Vehicle
+{
+    Vehicle()
+    {
+        System.out.println("Constructor of Vehicle Class called");
+    }
+}
+class Car extends Vehicle
+{
+    Car()
+    {
+        System.out.println("Constructor of Car Class called");
+    }
+}
+class Bike extends Vehicle
+{
+    Bike()
+    {
+        System.out.println("Constructor of Bike Class called");
+    }
+}
+class Main {
+    public static void main(String[] args)throws IOException
+    {
+        
+    }
+}
