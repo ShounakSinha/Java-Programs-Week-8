@@ -46,6 +46,7 @@ class Car extends Vehicle
     }
     void Start()
     {
+        
         System.out.println("The Cra is started");
     }
     void Stop()
@@ -83,11 +84,25 @@ class Main {
     public static void main(String[] args)throws IOException
     {
         BufferedReader read= new BufferedReader(new InputStreamReader(System.in));
-        Vehicle car= new Car();
-        Vehicle bike = new Bike();
+        Car car= new Car();
+        Bike bike = new Bike();
         car.statusOfCar();
         bike.statusOfBike();
         car.Start();
-        bike.Stop();
+        bike.Start();
+        Car car2= new Car();
+        Bike bike2 = new Bike();
+        car2.statusOfCar();
+        bike2.statusOfBike();
+        System.out.println("Halat of Car and Bike 1 : ");
+        car.statusOfCar();
+        bike.statusOfBike();
+        System.out.println("\n\n");
+        car2.Start();
+        bike2.Stop();
+        car2.statusOfCar();
+        bike2.statusOfBike();
+        
+        
     }
 }
