@@ -46,11 +46,12 @@ class Car extends Vehicle
     }
     void Start()
     {
-        
+        carstart=true;
         System.out.println("The Cra is started");
     }
     void Stop()
     {
+        carstart=false;
         System.out.println("The Cra is stopped");
     }
 }
@@ -73,10 +74,12 @@ class Bike extends Vehicle
     }
     void Start()
     {
+        bikestart=true;
         System.out.println("The Bike is started");
     }
     void Stop()
     {
+        bikestart=false;
         System.out.println("The Bike is stopped");
     }
 }
