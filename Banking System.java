@@ -1,3 +1,15 @@
+// Dynamic Polymorphism: Banking System
+// Objective: Show runtime polymorphism through method overriding.
+
+// Create a base class Bank with a method getRateOfInterest().
+// Create derived classes:
+// SBI, HDFC, ICICI: Override getRateOfInterest() with specific rates.
+// In the main() method:
+// Create an array of Bank objects.
+// Assign objects of SBI, HDFC, and ICICI to it.
+// Use a loop to call getRateOfInterest() on each object and display the bank name and interest rate.
+
+
 import java.io.*;
 
 class Bank
