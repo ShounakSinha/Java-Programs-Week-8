@@ -20,7 +20,7 @@ class Bank
     }
     public int getRateOfInterest()
     {
-        
+        return 0;
     }
 }
 class SBI extends Bank
@@ -31,7 +31,7 @@ class SBI extends Bank
     }
     public int getRateOfInterest()
     {
-        
+        return 5;
     }
 }
 class HDFC extends Bank
@@ -42,7 +42,7 @@ class HDFC extends Bank
     }
     public int getRateOfInterest()
     {
-        
+        return 6;
     }
 }
 class ICICI extends Bank
@@ -53,13 +53,19 @@ class ICICI extends Bank
     }
     public int getRateOfInterest()
     {
-        
+        return 7;
     }
 }
 
-class Main {
-    public static void main(String[] args)htrows IOException
-    {
-        
+public class Main {
+    public static void main(String args[]) {
+        Bank b[] = new Bank[3]; 
+        b[0] = new SBI();
+        b[1] = new HDFC();
+        b[2] = new ICICI();
+
+        for (int i = 0; i < b.length; i++) {
+            System.out.println("Interest Rate of " + b[i].getClass().getSimpleName() + " is: " + b[i].getRateOfInterest() + "%");
+        }
     }
 }
