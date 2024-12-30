@@ -50,10 +50,39 @@ class Tiger implements Animal, Status {
     }
 }
 
+class Buffalo implements Animal, Status {
+    private boolean hasEaten;
+    private boolean hasSlept;
 
+    @Override
+    public void eat() {
+        System.out.println("Buffalo is eating grass.");
+        hasEaten = true;
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Buffalo is sleeping.");
+        hasSlept = true;
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Moo!");
+    }
+
+    @Override
+    public boolean hasEaten() {
+        return hasEaten;
+    }
 
     @Override
     public boolean hasSlept() {
         return hasSlept;
     }
 }
+
+
+
+
+   
