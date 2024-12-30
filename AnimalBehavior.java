@@ -114,6 +114,40 @@ class Human implements Animal, Status {
     }
 }
 
+class Dog implements Animal, Status {
+    private boolean hasEaten;
+    private boolean hasSlept;
+
+    @Override
+    public void eat() {
+        System.out.println("Dog is eating dog food.");
+        hasEaten = true;
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Dog is sleeping.");
+        hasSlept = true;
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Woof!");
+    }
+
+    @Override
+    public boolean hasEaten() {
+        return hasEaten;
+    }
+
+    @Override
+    public boolean hasSlept() {
+        return hasSlept;
+    }
+}
+
+
+
 
 
    
