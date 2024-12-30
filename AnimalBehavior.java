@@ -146,7 +146,37 @@ class Dog implements Animal, Status {
     }
 }
 
+class Cat implements Animal, Status {
+    private boolean hasEaten;
+    private boolean hasSlept;
 
+    @Override
+    public void eat() {
+        System.out.println("Cat is eating fish.");
+        hasEaten = true;
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Cat is sleeping.");
+        hasSlept = true;
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Meow!");
+    }
+
+    @Override
+    public boolean hasEaten() {
+        return hasEaten;
+    }
+
+    @Override
+    public boolean hasSlept() {
+        return hasSlept;
+    }
+}
 
 
 
