@@ -210,4 +210,49 @@ class Bird implements Animal, Status {
     }
 }
 
-   
+public class AnimalBehavior {
+    public static void main(String[] args) {
+        Tiger tiger = new Tiger();
+        Buffalo buffalo = new Buffalo();
+        Human human = new Human();
+        Dog dog = new Dog();
+        Cat cat = new Cat();
+        Bird bird = new Bird();
+
+        tiger.eat();
+        tiger.sleep();
+        tiger.makeSound();
+        System.out.println("Tiger has eaten: " + tiger.hasEaten());
+        System.out.println("Tiger has slept: " + tiger.hasSlept());
+
+        buffalo.eat();
+        buffalo.sleep();
+        buffalo.makeSound();
+        System.out.println("Buffalo has eaten: " + buffalo.hasEaten());
+        System.out.println("Buffalo has slept: " + buffalo.hasSlept());
+
+        human.eat();
+        human.sleep();
+        human.makeSound();
+        System.out.println("Human has eaten: " + human.hasEaten());
+        System.out.println("Human has slept: " + human.hasSlept());
+
+        dog.eat();
+        dog.sleep();
+        dog.makeSound();
+        System.out.println("Dog has eaten: " + dog.hasEaten());
+        System.out.println("Dog has slept: " + dog.hasSlept());
+
+        cat.eat();
+        cat.sleep();
+        cat.makeSound();
+        System.out.println("Cat has eaten: " + cat.hasEaten());
+        System.out.println("Cat has slept: " + cat.hasSlept());
+
+        bird.eat();
+        bird.sleep();
+        bird.makeSound();
+        System.out.println("Bird has eaten: " + bird.hasEaten());
+        System.out.println("Bird has slept: " + bird.hasSlept());
+    }
+}   
