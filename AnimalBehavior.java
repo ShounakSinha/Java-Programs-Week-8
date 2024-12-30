@@ -7,4 +7,13 @@
 // In the main() method:
 // Create objects of each class and call all methods.
 
+interface Animal {
+    void eat();
+    void sleep();
+    void makeSound();
+}
 
+interface Status {
+    boolean hasEaten();
+    boolean hasSlept();
+}
