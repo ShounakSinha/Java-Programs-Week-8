@@ -82,6 +82,37 @@ class Buffalo implements Animal, Status {
     }
 }
 
+class Human implements Animal, Status {
+    private boolean hasEaten;
+    private boolean hasSlept;
+
+    @Override
+    public void eat() {
+        System.out.println("Human is eating food.");
+        hasEaten = true;
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Human is sleeping.");
+        hasSlept = true;
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Hello!");
+    }
+
+    @Override
+    public boolean hasEaten() {
+        return hasEaten;
+    }
+
+    @Override
+    public boolean hasSlept() {
+        return hasSlept;
+    }
+}
 
 
 
